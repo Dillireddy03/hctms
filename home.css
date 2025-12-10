@@ -1,0 +1,156 @@
+/* ---------- RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: #f3f4f6;             /* light grey background */
+  color: #111827;                  /* dark text */
+}
+
+/* ---------- HEADER / TOP BAR ---------- */
+
+.login {
+  background: #111827;             /* dark header */
+  color: #f9fafb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header-table td {
+  vertical-align: middle;
+  padding: 12px 16px;
+}
+
+.logo img {
+  display: ruby-base;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Wishlist & Cart buttons */
+
+.wish,
+.cart {
+  text-align: right;
+}
+
+/* base style for both buttons */
+.wish a,
+.cart a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+/* Wishlist button */
+.wish a {
+  background-color: #fce4ec;   /* light pink */
+  color: #c2185b;              /* dark pink */
+}
+
+/* Cart button */
+.cart a {
+  background-color: #e8f5e9;   /* light green */
+  color: #2e7d32;              /* dark green */
+}
+
+/* Hover effect */
+.wish a:hover,
+.cart a:hover {
+  transform: translateY(-1px);
+}
+
+/* darker on hover */
+.wish a:hover {
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
+
+.cart a:hover {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+/* ---------- MAIN CONTENT (VIDEOS & CATEGORY LINKS) ---------- */
+
+/* The div after .login */
+.login + div {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 16px;
+}
+
+/* Category table (FEMALE / MALE + videos) */
+.login + div table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 24px 12px;   /* gap between columns & rows */
+  text-align: center;
+}
+
+/* Category headings (FEMALE / MALE) */
+.login + div th a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #111827;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  display: inline-block;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.login + div th a:hover {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #111827;
+}
+
+/* Videos */
+.login + div video {
+  border-radius: 16px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- LOGIN / CREATE ACCOUNT LINKS ---------- */
+
+.login + div > p {
+  text-align: center;
+  margin: 24px 0 40px;
+  font-size: 0.95rem;
+}
+
+.login + div > p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2563eb;               /* blue */
+  margin: 0 4px;
+}
+
+.login + div > p a:hover {
+  text-decoration: underline;
+}
